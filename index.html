@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FlexDrop Pro</title>
+<meta name="description" content="Flexible ecommerce product-testing template">
+<style>
+:root{--bg:#f7f7f7;--text:#111;--card:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
+header{position:sticky;top:0;background:#fff;padding:15px 5%;display:flex;justify-content:space-between;border-bottom:1px solid #ddd;z-index:1000}
+.hero{padding:100px 5%;text-align:center;background:linear-gradient(135deg,#fff,#ececec)}
+.hero h1{font-size:3rem}
+.btn{background:#111;color:#fff;padding:14px 24px;border:none;border-radius:8px;cursor:pointer}
+.section{padding:70px 5%;max-width:1300px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.product{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.gallery img{width:100%;border-radius:12px}
+.sticky-cart{position:fixed;bottom:15px;right:15px;background:#111;color:#fff;padding:15px;border-radius:12px}
+input,select,textarea{width:100%;padding:12px;margin:8px 0}
+footer{background:#111;color:#fff;padding:50px 5%}
+@media(max-width:800px){.product{grid-template-columns:1fr}.hero h1{font-size:2rem}}
+</style>
+</head>
+<body>
+
+<header>
+<h2>FlexDrop Pro</h2>
+<nav>Home | Product | Reviews | FAQ | Contact</nav>
+</header>
+
+<section class="hero">
+<h1>Winning Product Store Template</h1>
+<p>Swap products while keeping a proven structure.</p>
+<button class="btn">Shop Now</button>
+</section>
+
+<section class="section product">
+<div class="gallery">
+<img src="https://via.placeholder.com/700x700?text=Product+Image" alt="Product">
+</div>
+<div>
+<h2>Product Name</h2>
+<p>Replace this with your product description.</p>
+<h3>$49.99</h3>
+<select><option>Default Variant</option></select>
+<input type="number" value="1" min="1">
+<button class="btn">Add To Cart</button>
+<button class="btn">Buy Now</button>
+<p>✓ Secure Checkout</p>
+<p>✓ 30-Day Returns</p>
+<p>✓ Fast Shipping</p>
+</div>
+</section>
+
+<section class="section">
+<h2>Benefits</h2>
+<div class="grid">
+<div class="card">Premium Quality</div>
+<div class="card">Fast Shipping</div>
+<div class="card">Easy To Use</div>
+<div class="card">Money Back Guarantee</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Reviews</h2>
+<div class="grid">
+<div class="card">★★★★★ Excellent product</div>
+<div class="card">★★★★★ Arrived quickly</div>
+<div class="card">★★★★★ Would buy again</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Bundle Offers</h2>
+<div class="grid">
+<div class="card">Buy 1</div>
+<div class="card">Buy 2 Save 10%</div>
+<div class="card">Buy 3 Save 20%</div>
+</div>
+</section>
+
+<section class="section">
+<h2>FAQ</h2>
+<div class="card"><b>Shipping?</b><p>5-12 business days.</p></div>
+<div class="card"><b>Returns?</b><p>30-day return policy.</p></div>
+<div class="card"><b>Payments?</b><p>Ready for Stripe & PayPal integration.</p></div>
+</section>
+
+<section class="section">
+<h2>Email Signup</h2>
+<input placeholder="Email Address">
+<button class="btn">Subscribe</button>
+</section>
+
+<section class="section">
+<h2>Contact</h2>
+<input placeholder="Name">
+<input placeholder="Email">
+<textarea placeholder="Message"></textarea>
+<button class="btn">Send</button>
+</section>
+
+<footer>
+<h3>FlexDrop Pro</h3>
+<p>Privacy Policy | Refund Policy | Terms of Service | Contact</p>
+<p>Placeholder areas for Stripe, PayPal, Analytics, Meta Pixel, TikTok Pixel, and live-chat integrations.</p>
+</footer>
+
+<div class="sticky-cart">Cart (0)</div>
+
+<script>
+let cart=0;
+document.querySelectorAll('.btn')[1].onclick=()=>{
+cart++;
+document.querySelector('.sticky-cart').innerText='Cart ('+cart+')';
+};
+</script>
+
+</body>
+</html>
