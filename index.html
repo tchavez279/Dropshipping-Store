@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura & Form — Considered objects for the modern home</title>
+  <meta name="description" content="Hand-finished ceramics, lighting, furniture and textiles. Curated home objects designed to soften any space." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-bg': '#FAF9F6',
+            'brand-text': '#1A1A1A',
+            'brand-muted': '#8B7E74',
+            'brand-accent': '#E5E1DA',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="min-h-screen bg-brand-bg text-brand-text selection:bg-brand-accent">
+
+  <nav class="flex items-center justify-between px-8 py-6 border-b border-brand-text/5">
+    <a href="/" class="text-xl font-serif italic tracking-tight">Aura &amp; Form</a>
+    <div class="hidden md:flex gap-10 text-sm tracking-wide uppercase">
+      <a href="#trending" class="hover:text-brand-muted transition-colors">Shop All</a>
+      <a href="#trending" class="hover:text-brand-muted transition-colors">New Arrivals</a>
+      <a href="#about" class="hover:text-brand-muted transition-colors">About</a>
+    </div>
+    <div class="flex gap-6 text-sm uppercase tracking-wide font-medium">
+      <button class="hover:text-brand-muted transition-colors">Search</button>
+      <button class="hover:text-brand-muted transition-colors">Bag (0)</button>
+    </div>
+  </nav>
+
+  <section class="px-8 py-12 md:py-20">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-5 space-y-8">
+        <span class="text-xs uppercase tracking-[0.2em] text-brand-muted">Featured Release</span>
+        <h1 class="text-5xl md:text-7xl font-serif leading-[1.1]">The Sculptural <br />Pendant Light</h1>
+        <p class="text-lg text-brand-muted max-w-sm leading-relaxed">
+          Hand-finished ceramic meeting modern geometry. A centerpiece designed to soften any space with warm, diffuse light.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+          <button class="px-8 py-4 bg-brand-text text-brand-bg hover:bg-brand-muted transition-colors uppercase text-xs tracking-widest font-medium">Shop Featured — $240</button>
+          <button class="px-8 py-4 border border-brand-text/20 hover:border-brand-text transition-colors uppercase text-xs tracking-widest font-medium">View Collection</button>
+        </div>
+      </div>
+      <div class="md:col-span-7">
+        <img src="assets/hero-pendant.jpg" alt="Sculptural ceramic pendant light" width="1024" height="1280" class="w-full aspect-[4/5] object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <section class="px-8 py-12">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-3">
+      <button class="px-6 py-2 rounded-full border border-brand-text/10 bg-white text-xs uppercase tracking-widest hover:border-brand-text transition-colors">Textiles</button>
+      <button class="px-6 py-2 rounded-full border border-brand-text/10 bg-white text-xs uppercase tracking-widest hover:border-brand-text transition-colors">Lighting</button>
+      <button class="px-6 py-2 rounded-full border border-brand-text/10 bg-brand-text text-brand-bg text-xs uppercase tracking-widest">Furniture</button>
+      <button class="px-6 py-2 rounded-full border border-brand-text/10 bg-white text-xs uppercase tracking-widest hover:border-brand-text transition-colors">Ceramics</button>
+      <button class="px-6 py-2 rounded-full border border-brand-text/10 bg-white text-xs uppercase tracking-widest hover:border-brand-text transition-colors">Kitchen</button>
+    </div>
+  </section>
+
+  <section id="trending" class="px-8 py-20 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between items-end mb-12">
+        <h2 class="text-3xl font-serif">Trending Objects</h2>
+        <a href="#" class="text-xs uppercase tracking-widest border-b border-brand-text/20 pb-1">View all</a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <article class="group cursor-pointer">
+          <div class="w-full aspect-[4/5] bg-brand-bg mb-4 overflow-hidden">
+            <img src="assets/product-stool.jpg" alt="The Arch Stool" loading="lazy" width="640" height="800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <h3 class="text-sm uppercase tracking-wider mb-1">The Arch Stool</h3>
+          <p class="text-brand-muted text-sm">$185.00</p>
+        </article>
+        <article class="group cursor-pointer">
+          <div class="w-full aspect-[4/5] bg-brand-bg mb-4 overflow-hidden">
+            <img src="assets/product-vase.jpg" alt="Mist Glass Vase" loading="lazy" width="640" height="800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <h3 class="text-sm uppercase tracking-wider mb-1">Mist Glass Vase</h3>
+          <p class="text-brand-muted text-sm">$64.00</p>
+        </article>
+        <article class="group cursor-pointer">
+          <div class="w-full aspect-[4/5] bg-brand-bg mb-4 overflow-hidden">
+            <img src="assets/product-teapot.jpg" alt="Mod Teapot" loading="lazy" width="640" height="800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <h3 class="text-sm uppercase tracking-wider mb-1">Mod Teapot</h3>
+          <p class="text-brand-muted text-sm">$110.00</p>
+        </article>
+        <article class="group cursor-pointer">
+          <div class="w-full aspect-[4/5] bg-brand-bg mb-4 overflow-hidden">
+            <img src="assets/product-throw.jpg" alt="Woven Throw" loading="lazy" width="640" height="800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <h3 class="text-sm uppercase tracking-wider mb-1">Woven Throw</h3>
+          <p class="text-brand-muted text-sm">$92.00</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-8 py-24 bg-brand-accent/40">
+    <div class="max-w-3xl mx-auto text-center">
+      <span class="text-[10px] uppercase tracking-[0.3em] text-brand-muted mb-8 block">Guest Notes</span>
+      <blockquote class="text-2xl md:text-3xl font-serif italic leading-snug mb-8">
+        &ldquo;Every piece I&rsquo;ve ordered from Aura &amp; Form feels intentionally chosen. The shipping was surprisingly fast, but the quality is what made me a regular customer.&rdquo;
+      </blockquote>
+      <cite class="text-xs uppercase tracking-widest font-medium not-italic">— Elena Moretti, Milan</cite>
+    </div>
+  </section>
+
+  <footer id="about" class="bg-brand-text text-brand-bg px-8 pt-20 pb-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 mb-20">
+      <div class="space-y-6">
+        <h2 class="text-2xl font-serif">The Journal</h2>
+        <p class="text-brand-bg/60 max-w-sm text-sm leading-relaxed">Join our mailing list for early access to limited object drops and curated interior inspiration twice a month.</p>
+        <form class="flex border-b border-brand-bg/20 pb-2 max-w-md" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="Email Address" class="bg-transparent w-full text-sm outline-none placeholder:text-brand-bg/30 uppercase tracking-widest" />
+          <button type="submit" class="text-xs uppercase tracking-widest font-medium hover:text-brand-accent transition-colors">Subscribe</button>
+        </form>
+      </div>
+      <div class="grid grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <h4 class="text-[10px] uppercase tracking-[0.2em] text-brand-bg/40">Support</h4>
+          <ul class="text-sm space-y-2">
+            <li><a href="#" class="hover:text-brand-accent transition-colors">Shipping</a></li>
+            <li><a href="#" class="hover:text-brand-accent transition-colors">Returns</a></li>
+            <li><a href="#" class="hover:text-brand-accent transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h4 class="text-[10px] uppercase tracking-[0.2em] text-brand-bg/40">Connect</h4>
+          <ul class="text-sm space-y-2">
+            <li><a href="#" class="hover:text-brand-accent transition-colors">Instagram</a></li>
+            <li><a href="#" class="hover:text-brand-accent transition-colors">Pinterest</a></li>
+            <li><a href="#" class="hover:text-brand-accent transition-colors">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-12 border-t border-brand-bg/10 flex justify-between items-center">
+      <p class="text-[10px] uppercase tracking-widest text-brand-bg/40">&copy; 2024 Aura &amp; Form Limited</p>
+    </div>
+  </footer>
+
+</body>
+</html>
